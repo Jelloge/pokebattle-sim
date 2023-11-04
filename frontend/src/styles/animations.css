@@ -1,0 +1,125 @@
+/* Attack lunge animation */
+@keyframes attackLunge {
+  0% { transform: translateX(0); }
+  30% { transform: translateX(20px); }
+  60% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes attackLungeLeft {
+  0% { transform: translateX(0); }
+  30% { transform: translateX(-20px); }
+  60% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
+.sprite-attacking {
+  animation: attackLunge 0.4s ease-in-out;
+}
+
+.sprite-attacking-left {
+  animation: attackLungeLeft 0.4s ease-in-out;
+}
+
+/* Damage taken animation */
+@keyframes damageShake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+
+@keyframes damageFlash {
+  0%, 100% { opacity: 1; }
+  25% { opacity: 0.3; }
+  50% { opacity: 1; }
+  75% { opacity: 0.3; }
+}
+
+.sprite-damaged {
+  animation: damageShake 0.5s ease-in-out, damageFlash 0.6s ease-in-out;
+}
+
+/* Super effective flash */
+@keyframes superEffective {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(2.5) saturate(2); }
+  100% { filter: brightness(1); }
+}
+
+.sprite-super-effective {
+  animation: superEffective 0.3s ease-in-out 2;
+}
+
+/* Faint animation */
+@keyframes faint {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(40px); opacity: 0; }
+}
+
+.sprite-fainted {
+  animation: faint 0.8s ease-in forwards;
+}
+
+/* Status indicator appearance */
+@keyframes statusAppear {
+  0% { transform: scale(0); opacity: 0; }
+  60% { transform: scale(1.2); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.status-new {
+  animation: statusAppear 0.3s ease-out;
+}
+
+/* Fade in for log messages */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Slide in from side */
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.5s ease-out;
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.5s ease-out;
+}
+
+/* Win overlay */
+@keyframes overlayFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes winTextPop {
+  0% { transform: scale(0.5); opacity: 0; }
+  70% { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Pulse for active status */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
