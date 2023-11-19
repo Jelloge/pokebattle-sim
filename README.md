@@ -1,7 +1,10 @@
 # PokeBattle Sim
 
-A Gen 1 Pokemon battle simulator with an AI opponent, animated battles, and post-battle analytics. Built w/ React + TypeScript frontend and FastAPI (Python) backend. Initially created to learn Typescript and React but decided to develop it further!
+A Gen 1 Pokemon battle simulator with an AI opponent, animated battles, and post-battle analytics. Built w/ React + TypeScript frontend and FastAPI (Python) backend.
 
+Originally created to keep track of my progress with learning Typescript and React.
+
+Features:
 - All Gen 1 Pokemon with info scraped from Bulbapedia
 - AI opponent that selects a stat-matched Pokemon, and chooses moves w/ a weighted scoring system (damage potential, status value, healing prio, and context bonuses)
 - Accurate Gen 1 damage formula
