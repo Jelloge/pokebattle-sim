@@ -2,7 +2,7 @@
 
 A Gen 1 Pokemon battle simulator with an AI opponent, animated battles, and post-battle analytics. Built w/ React + TypeScript frontend and FastAPI (Python) backend.
 
-Originally created to keep track of my progress with learning Typescript and React.
+Originally created to keep track of my progress with learning Typescript and React over the course of a month!
 
 Features:
 - All Gen 1 Pokemon with info scraped from Bulbapedia
